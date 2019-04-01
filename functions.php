@@ -32,6 +32,12 @@ add_action('after_setup_theme', function () {
     ]);
 });
 
+// Register student custom post type.
+require get_template_directory().'/post-types/activities.php';
+require get_template_directory().'/post-types/projects.php';
+require get_template_directory().'/post-types/partners.php';
+require get_template_directory().'/post-types/branches.php';
+
 // Enqueue and register scripts the right way.
 add_action('wp_enqueue_scripts', function () {
     wp_deregister_script('jquery');
