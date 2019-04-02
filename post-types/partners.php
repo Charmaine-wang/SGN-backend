@@ -13,8 +13,6 @@ add_action('init', function () {
             'singular_name' => __('Partner'),
         ],
             'supports' => [
-            'title',
-            'editor',
             'thumbnail',
         ],
         'menu_icon' => 'dashicons-groups',

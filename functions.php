@@ -32,11 +32,50 @@ add_action('after_setup_theme', function () {
     ]);
 });
 
-// Register student custom post type.
+// Register custom post types.
 require get_template_directory().'/post-types/activities.php';
 require get_template_directory().'/post-types/projects.php';
 require get_template_directory().'/post-types/partners.php';
 require get_template_directory().'/post-types/branches.php';
+
+// Adds custom field for Partners post type
+if( function_exists('acf_add_local_field_group') ):
+
+    acf_add_local_field_group([
+        'key' => 'group_5ca319457bdf2',
+        'title' => 'Add Partner',
+        'fields' => [
+            [
+                'key' => 'field_5ca3198201d40',
+                'label' => 'Add Partner',
+                'name' => 'link',
+                'type' => 'url',
+                'instructions' => 'Here you can insert a url to your partners and a feautered image.',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'default_value' => '',
+                'placeholder' => 'https://website.com',
+            ],
+        ],
+        'location' => [
+            [
+                [
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'partners',
+                ],
+            ],
+        ],
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+    ]);
+endif;
 
 // Enqueue and register scripts the right way.
 add_action('wp_enqueue_scripts', function () {
