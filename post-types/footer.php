@@ -13,8 +13,6 @@ add_action('init', function () {
             'singular_name' => __('Footer'),
         ],
         'supports' => [
-            'title',
-            'editor',
             'thumbnail',
         ],
         'menu_icon' => 'dashicons-admin-links',
@@ -23,3 +21,5 @@ add_action('init', function () {
         'show_in_rest' => true
     ]);
 });
+
+
