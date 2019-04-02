@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare (strict_types = 1);
 
 add_action('init', function () {
     register_post_type('activities', [
@@ -12,12 +12,12 @@ add_action('init', function () {
             'search_items' => __('Search Activities'),
             'singular_name' => __('Activitie'),
         ],
-            'supports' => [
-                'title',
-                'editor',
-                'thumbnail',
+        'supports' => [
+            'title',
+            'editor',
+            'thumbnail',
         ],
-        'menu_icon' => 'dashicons-groups',
+        'menu_icon' => 'dashicons-calendar-alt',
         'menu_position' => 20,
         'public' => true,
         'show_in_rest' => true
