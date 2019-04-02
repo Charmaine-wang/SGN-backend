@@ -12,7 +12,7 @@ add_action('init', function () {
             'search_items' => __('Search Partners'),
             'singular_name' => __('Partner'),
         ],
-                'supports' => [
+            'supports' => [
             'title',
             'editor',
             'thumbnail',
@@ -20,5 +20,6 @@ add_action('init', function () {
         'menu_icon' => 'dashicons-groups',
         'menu_position' => 20,
         'public' => true,
+        'show_in_rest' => true
     ]);
 });
