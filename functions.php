@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare (strict_types = 1);
 
 // Register plugin helpers.
 require template_path('includes/plugins/plate.php');
@@ -33,13 +33,14 @@ add_action('after_setup_theme', function () {
 });
 
 // Register custom post types.
-require get_template_directory().'/post-types/activities.php';
-require get_template_directory().'/post-types/projects.php';
-require get_template_directory().'/post-types/partners.php';
-require get_template_directory().'/post-types/branches.php';
+require get_template_directory() . '/post-types/activities.php';
+require get_template_directory() . '/post-types/projects.php';
+require get_template_directory() . '/post-types/partners.php';
+require get_template_directory() . '/post-types/branches.php';
+require get_template_directory() . '/post-types/footer.php';
 
 // Adds custom field for Partners post type
-if( function_exists('acf_add_local_field_group') ):
+if (function_exists('acf_add_local_field_group')) :
 
     acf_add_local_field_group([
         'key' => 'group_5ca319457bdf2',
