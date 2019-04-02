@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare (strict_types = 1);
 
 // Register plugin helpers.
 require template_path('includes/plugins/plate.php');
