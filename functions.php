@@ -37,11 +37,17 @@ require get_template_directory().'/post-types/activities.php';
 require get_template_directory().'/post-types/projects.php';
 require get_template_directory().'/post-types/partners.php';
 require get_template_directory().'/post-types/branches.php';
+require get_template_directory().'/post-types/contacts.php';
 require get_template_directory().'/post-types/footer.php';
 
 // Require custom fields.
-require get_template_directory().'/custom-fields/cf-footer.php';
+require get_template_directory().'/custom-fields/cf-activities.php';
+require get_template_directory().'/custom-fields/cf-projects.php';
 require get_template_directory().'/custom-fields/cf-partners.php';
+require get_template_directory().'/custom-fields/cf-branches.php';
+require get_template_directory().'/custom-fields/cf-contacts.php';
+require get_template_directory().'/custom-fields/cf-footer.php';
+
 
 // Enqueue and register scripts the right way.
 add_action('wp_enqueue_scripts', function () {
