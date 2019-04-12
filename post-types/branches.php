@@ -14,7 +14,6 @@ add_action('init', function () {
         ],
         'supports' => [
             'title',
-            'editor',
             'thumbnail',
         ],
         'menu_icon' => 'dashicons-networking',
