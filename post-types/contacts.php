@@ -16,7 +16,7 @@ add_action('init', function () {
             'title',
             'thumbnail'
         ],
-        'menu_icon' => 'dashicons-list-view',
+        'menu_icon' => 'dashicons-phone',
         'menu_position' => 20,
         'public' => true,
         'show_in_rest' => true
