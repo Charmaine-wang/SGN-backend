@@ -50,6 +50,7 @@ require get_template_directory() . '/custom-fields/cf-footer.php';
 
 // require custom fields for pages
 require get_template_directory() . '/custom-fields-pages/cf-get-involved.php';
+require get_template_directory() . '/custom-fields-pages/cf-home.php';
 
 // remove Gutenberg fields
 add_filter('use_block_editor_for_post', '__return_false', 10);
