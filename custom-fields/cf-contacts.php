@@ -4,60 +4,119 @@ declare (strict_types = 1);
 
 if( function_exists('acf_add_local_field_group') ):
 
-// Adds custom fields for contact information
-acf_add_local_field_group([
-    'key' => 'group_5cae0754aa375',
-    'title' => 'Contact Information',
-    'fields' => [
-        [
-            'key' => 'field_5cae0757b9c77',
-            'label' => 'Email',
-            'name' => 'email',
-            'type' => 'email',
-            'instructions' => 'Insert email here',
+acf_add_local_field_group(array(
+    'key' => 'group_5cb0d2d9a024d',
+    'title' => 'ContactInformation',
+    'fields' => array(
+        array(
+            'key' => 'field_5cb0d2e3dad73',
+            'label' => 'ContactInfo',
+            'name' => 'contactinfo',
+            'type' => 'group',
+            'instructions' => 'Here you can fill a persons information',
             'required' => 0,
             'conditional_logic' => 0,
-            'wrapper' => [
+            'wrapper' => array(
                 'width' => '',
                 'class' => '',
                 'id' => '',
-            ],
-            'default_value' => '',
-            'placeholder' => '',
-            'prepend' => '',
-            'append' => '',
-        ],
-        [
-            'key' => 'field_5cae07dbb9c78',
-            'label' => 'Phone-number',
-            'name' => 'phone-number',
-            'type' => 'number',
-            'instructions' => 'Insert phone number here',
-            'required' => 0,
-            'conditional_logic' => 0,
-            'wrapper' => [
-                'width' => '',
-                'class' => '',
-                'id' => '',
-            ],
-            'default_value' => '',
-            'placeholder' => '',
-            'prepend' => '',
-            'append' => '',
-            'min' => '',
-            'max' => '',
-            'step' => '',
-        ],
-    ],
-    'location' => [
-        [
-            [
+            ),
+            'layout' => 'block',
+            'sub_fields' => array(
+                array(
+                    'key' => 'field_5cb0d5e6905ac',
+                    'label' => 'Image',
+                    'name' => 'ima',
+                    'type' => 'image',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'return_format' => 'array',
+                    'preview_size' => 'thumbnail',
+                    'library' => 'all',
+                    'min_width' => '',
+                    'min_height' => '',
+                    'min_size' => '',
+                    'max_width' => '',
+                    'max_height' => '',
+                    'max_size' => '',
+                    'mime_types' => '',
+                ),
+                array(
+                    'key' => 'field_5cb0d31fdad74',
+                    'label' => 'Description',
+                    'name' => 'description',
+                    'type' => 'text',
+                    'instructions' => 'Say something about yourself..',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'default_value' => '',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'maxlength' => '',
+                ),
+                array(
+                    'key' => 'field_5cb0d355dad75',
+                    'label' => 'Email',
+                    'name' => 'email',
+                    'type' => 'email',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'default_value' => '',
+                    'placeholder' => 'example@mail.com',
+                    'prepend' => '',
+                    'append' => '',
+                ),
+                array(
+                    'key' => 'field_5cb0d36ddad76',
+                    'label' => 'Phone',
+                    'name' => 'phone',
+                    'type' => 'number',
+                    'instructions' => '',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'default_value' => '',
+                    'placeholder' => '0707...',
+                    'prepend' => '',
+                    'append' => '',
+                    'min' => '',
+                    'max' => '',
+                    'step' => '',
+                ),
+            ),
+        ),
+    ),
+    'location' => array(
+        array(
+            array(
                 'param' => 'post_type',
                 'operator' => '==',
                 'value' => 'contacts',
-            ],
-        ],
-    ],
+            ),
+        ),
+    ),
     'menu_order' => 0,
     'position' => 'normal',
     'style' => 'default',
@@ -66,6 +125,6 @@ acf_add_local_field_group([
     'hide_on_screen' => '',
     'active' => true,
     'description' => '',
-]);
+));
 
 endif;
