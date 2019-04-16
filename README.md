@@ -13,6 +13,7 @@ install Advanced Custom Fields, for adding your own post-types.
 install ACF to REST API, to access custom fields in the API.
 install Polylang for language handling
 install bainternet-posts-creation-limits, this is to add limits to post-types.
+install Post Types Order for being able to sort the order of posts.
 ```
 # END OF INSTALLATION
 
