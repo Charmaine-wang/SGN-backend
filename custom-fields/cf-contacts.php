@@ -1,19 +1,20 @@
 <?php
 
-declare (strict_types = 1);
+declare(strict_types = 1);
 
 if( function_exists('acf_add_local_field_group') ):
 
+
 acf_add_local_field_group(array(
-    'key' => 'group_5cb0d2d9a024d',
-    'title' => 'ContactInformation',
+    'key' => 'group_5cb616471541e',
+    'title' => 'Contact Information',
     'fields' => array(
         array(
-            'key' => 'field_5cb0d2e3dad73',
-            'label' => 'ContactInfo',
-            'name' => 'contactinfo',
+            'key' => 'field_5cb616553445f',
+            'label' => 'Information',
+            'name' => 'information',
             'type' => 'group',
-            'instructions' => 'Here you can fill a persons information',
+            'instructions' => 'Here you can fill in a persons information.',
             'required' => 0,
             'conditional_logic' => 0,
             'wrapper' => array(
@@ -24,9 +25,9 @@ acf_add_local_field_group(array(
             'layout' => 'block',
             'sub_fields' => array(
                 array(
-                    'key' => 'field_5cb0d5e6905ac',
+                    'key' => 'field_5cb6168d34460',
                     'label' => 'Image',
-                    'name' => 'ima',
+                    'name' => 'image',
                     'type' => 'image',
                     'instructions' => '',
                     'required' => 0,
@@ -37,7 +38,7 @@ acf_add_local_field_group(array(
                         'id' => '',
                     ),
                     'return_format' => 'array',
-                    'preview_size' => 'thumbnail',
+                    'preview_size' => 'medium',
                     'library' => 'all',
                     'min_width' => '',
                     'min_height' => '',
@@ -48,11 +49,11 @@ acf_add_local_field_group(array(
                     'mime_types' => '',
                 ),
                 array(
-                    'key' => 'field_5cb0d31fdad74',
+                    'key' => 'field_5cb616b434461',
                     'label' => 'Description',
                     'name' => 'description',
                     'type' => 'text',
-                    'instructions' => 'Say something about yourself..',
+                    'instructions' => 'Say something about yourself',
                     'required' => 0,
                     'conditional_logic' => 0,
                     'wrapper' => array(
@@ -67,7 +68,7 @@ acf_add_local_field_group(array(
                     'maxlength' => '',
                 ),
                 array(
-                    'key' => 'field_5cb0d355dad75',
+                    'key' => 'field_5cb616d734462',
                     'label' => 'Email',
                     'name' => 'email',
                     'type' => 'email',
@@ -85,9 +86,9 @@ acf_add_local_field_group(array(
                     'append' => '',
                 ),
                 array(
-                    'key' => 'field_5cb0d36ddad76',
-                    'label' => 'Phone',
-                    'name' => 'phone',
+                    'key' => 'field_5cb616f134463',
+                    'label' => 'Phone Number',
+                    'name' => 'phone_number',
                     'type' => 'number',
                     'instructions' => '',
                     'required' => 0,
