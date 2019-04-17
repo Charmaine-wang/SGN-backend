@@ -79,8 +79,8 @@ if (function_exists('acf_add_local_field_group')) :
                     ),
                     array(
                         'key' => 'field_5cb0747ad6d35',
-                        'label' => 'Scroll',
-                        'name' => 'scroll',
+                        'label' => 'Scroll-message',
+                        'name' => 'scroll-message',
                         'type' => 'text',
                         'instructions' => '',
                         'required' => 1,
@@ -172,8 +172,8 @@ if (function_exists('acf_add_local_field_group')) :
                     ),
                     array(
                         'key' => 'field_5cb074d5d6d3a',
-                        'label' => 'Start one',
-                        'name' => 'start_one',
+                        'label' => 'Start one!',
+                        'name' => 'start_one!',
                         'type' => 'text',
                         'instructions' => '',
                         'required' => 1,
@@ -191,8 +191,8 @@ if (function_exists('acf_add_local_field_group')) :
                     ),
                     array(
                         'key' => 'field_5cb074fdd6d3b',
-                        'label' => 'Start_one_link',
-                        'name' => 'start_one_link',
+                        'label' => 'Start-one-link',
+                        'name' => 'start-one-link',
                         'type' => 'url',
                         'instructions' => '',
                         'required' => 0,
@@ -281,8 +281,8 @@ if (function_exists('acf_add_local_field_group')) :
                     ),
                     array(
                         'key' => 'field_5cb07534d6d40',
-                        'label' => 'Start one',
-                        'name' => 'start_one',
+                        'label' => 'Start one!',
+                        'name' => 'start_one!',
                         'type' => 'text',
                         'instructions' => '',
                         'required' => 1,
@@ -300,8 +300,8 @@ if (function_exists('acf_add_local_field_group')) :
                     ),
                     array(
                         'key' => 'field_5cb07541d6d41',
-                        'label' => 'start_one_link',
-                        'name' => 'start_one_link',
+                        'label' => 'start-one-link',
+                        'name' => 'start-one-link',
                         'type' => 'text',
                         'instructions' => '',
                         'required' => 0,
@@ -397,9 +397,9 @@ if (function_exists('acf_add_local_field_group')) :
         'location' => array(
             array(
                 array(
-                    'param' => 'page',
+                    'param' => 'page_template',
                     'operator' => '==',
-                    'value' => '63',
+                    'value' => 'page-templates/get-involved.php',
                 ),
             ),
         ),

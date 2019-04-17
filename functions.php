@@ -55,11 +55,6 @@ require get_template_directory() . '/custom-fields-pages/cf-who-we-are.php';
 require get_template_directory() . '/custom-fields-pages/cf-what-we-do.php';
 require get_template_directory() . '/custom-fields-pages/cf-contact.php';
 
-
-// remove Gutenberg fields
-add_filter('use_block_editor_for_post', '__return_false', 10);
-add_filter('use_block_editor_for_page', '__return_false', 10);
-
 // Enqueue and register scripts the right way.
 add_action('wp_enqueue_scripts', function () {
     wp_deregister_script('jquery');

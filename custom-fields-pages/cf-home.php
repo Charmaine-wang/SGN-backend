@@ -1,5 +1,4 @@
 <?php
-
 if (function_exists('acf_add_local_field_group')) :
 
     acf_add_local_field_group(array(
@@ -577,9 +576,9 @@ if (function_exists('acf_add_local_field_group')) :
         'location' => array(
             array(
                 array(
-                    'param' => 'page',
+                    'param' => 'page_template',
                     'operator' => '==',
-                    'value' => '100',
+                    'value' => 'page-templates/home.php',
                 ),
             ),
         ),
@@ -598,7 +597,6 @@ if (function_exists('acf_add_local_field_group')) :
             6 => 'slug',
             7 => 'author',
             8 => 'format',
-            9 => 'page_attributes',
             10 => 'featured_image',
             11 => 'categories',
             12 => 'tags',

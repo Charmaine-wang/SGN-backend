@@ -316,7 +316,7 @@ if (function_exists('acf_add_local_field_group')) :
             ),
             array(
                 'key' => 'field_5cb35d89da2bf',
-                'label' => 'main email',
+                'label' => 'Main email',
                 'name' => 'main_email',
                 'type' => 'email',
                 'instructions' => '',
@@ -336,9 +336,9 @@ if (function_exists('acf_add_local_field_group')) :
         'location' => array(
             array(
                 array(
-                    'param' => 'page',
+                    'param' => 'page_template',
                     'operator' => '==',
-                    'value' => '106',
+                    'value' => 'page-templates/contact.php',
                 ),
             ),
         ),
@@ -357,7 +357,6 @@ if (function_exists('acf_add_local_field_group')) :
             6 => 'slug',
             7 => 'author',
             8 => 'format',
-            9 => 'page_attributes',
             10 => 'featured_image',
             11 => 'categories',
             12 => 'tags',

@@ -360,9 +360,9 @@ if (function_exists('acf_add_local_field_group')) :
         'location' => array(
             array(
                 array(
-                    'param' => 'page',
+                    'param' => 'page_template',
                     'operator' => '==',
-                    'value' => '102',
+                    'value' => 'page-templates/who-we-are.php',
                 ),
             ),
         ),
@@ -381,7 +381,6 @@ if (function_exists('acf_add_local_field_group')) :
             6 => 'slug',
             7 => 'author',
             8 => 'format',
-            9 => 'page_attributes',
             10 => 'featured_image',
             11 => 'categories',
             12 => 'tags',
