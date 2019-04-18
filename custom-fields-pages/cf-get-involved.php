@@ -79,8 +79,8 @@ if (function_exists('acf_add_local_field_group')) :
                     ),
                     array(
                         'key' => 'field_5cb0747ad6d35',
-                        'label' => 'Scroll-message',
-                        'name' => 'scroll-message',
+                        'label' => 'Scroll',
+                        'name' => 'scroll',
                         'type' => 'text',
                         'instructions' => '',
                         'required' => 1,
