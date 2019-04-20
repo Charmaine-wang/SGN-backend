@@ -69,6 +69,17 @@ acf_add_local_field_group([
             'append' => '',
             'maxlength' => '',
         ],
+        [
+            'key' => 'field_5ca364e3c1dcf',
+            'label' => 'Whats App',
+            'name' => 'whatsapp',
+            'type' => 'url',
+            'instructions' => 'Here we paste our Whatsapp url.',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'default_value' => '',
+            'placeholder' => '',
+        ],
     ],
     'location' => [
         [
