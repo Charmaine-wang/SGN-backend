@@ -60,8 +60,8 @@ if (function_exists('acf_add_local_field_group')) :
                     ),
                     array(
                         'key' => 'field_5cb07475d6d34',
-                        'label' => 'Descriptions',
-                        'name' => 'descriptions',
+                        'label' => 'Description',
+                        'name' => 'description',
                         'type' => 'text',
                         'instructions' => '',
                         'required' => 1,
