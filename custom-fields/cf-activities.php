@@ -7,12 +7,12 @@ if( function_exists('acf_add_local_field_group') ):
 // Adds custom fields for Activities
 acf_add_local_field_group([
     'key' => 'group_5cae0f7a0b3b9',
-    'title' => 'Activities-group',
+    'title' => 'Activities',
     'fields' => [
         [
             'key' => 'field_5cae0f8cf1058',
             'label' => 'New Activity',
-            'name' => 'activities-group',
+            'name' => 'activities',
             'type' => 'group',
             'instructions' => 'Here we can create a new activity with photo, description and location.',
             'required' => 0,
